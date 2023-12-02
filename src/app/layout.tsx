@@ -21,14 +21,14 @@ export default function RootLayout({
 }) {
   return (
     <ClerkProvider localization={ptBR}>
-    <html lang="pt-br">
-      <body className={clsx(inter.className, 'bg-slate-700')}>
-        <NavBar/>
-        <main className='bg-slate-700 h-screen p-16'>
-          {children}
-        </main>
-      </body>
-    </html>
+      <html lang="pt-br">
+        <body className={clsx(inter.className, 'bg-slate-700')}>
+          <NavBar />
+          <main className='bg-slate-700 h-screen p-16'>
+            {children}
+          </main>
+        </body>
+      </html>
     </ClerkProvider>
   )
 }
