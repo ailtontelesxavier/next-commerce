@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import clsx from 'clsx'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import NavBar from './components/NavBar'
@@ -18,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <body className={inter.className}>
+      <body className={clsx(inter.className, 'bg-slate-700')}>
         <NavBar/>
         <main className='bg-slate-700 h-screen p-16'>
           {children}
